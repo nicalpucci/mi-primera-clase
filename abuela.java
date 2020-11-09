@@ -19,9 +19,8 @@
     /**
      * Para cambiar el nombre de la susodicha octogenaria
      */
-    public String setName(String yaya){
+    public void setName(String yaya){
         nombreYaya = yaya;
-        return nombreYaya;
     }
     
     /**
@@ -56,25 +55,38 @@
     /**
      * La abuela también se echa la siesta, pero también sirve para despertarla
      */    
-    public boolean DormirODespertar(){
+    public void DormirODespertar(){
         if(haceSiestaAhora == false){
             haceSiestaAhora = true;
-            return haceSiestaAhora;
         }else{
             haceSiestaAhora = false;
-            return haceSiestaAhora;
-        }        
+        }
     }
-    
+        
     /**
-     * También podemos saber si está durmiendo o no sin molestarla
+     * Toda la info que debes saber sobre ella
      */
-    public boolean getStatusSiestaYaya(){
-        return haceSiestaAhora;
+    public String getStatusYaya(){
+        String status;
+        String siestecita;
+        if(haceSiestaAhora == true){
+            siestecita = "Sí";
+        }else{
+            siestecita = "No";
+        }
+        status = ("Yaya en cuestión: " + nombreYaya + " | " + "Total de tortillas hechas: " + numeroTortillasTotales + " | " + "¿Está en plena siesta? " + siestecita);
+        return status;
     }
     
-    public void ImprimirDetalles(){
-        System.out.println("Yaya en cuestión: " + nombreYaya + " | " + "Total de tortillas hechas: " + numeroTortillasTotales + " | " + "¿Está en plena siesta? " + haceSiestaAhora);
+    
+    public void imprimirDetalles(){
+        String siestecita;
+        if(haceSiestaAhora == true){
+            siestecita = "Sí";
+        }else{
+            siestecita = "No";
+        }
+        System.out.println("Yaya en cuestión: " + nombreYaya + " | " + "Total de tortillas hechas: " + numeroTortillasTotales + " | " + "¿Está en plena siesta? " + siestecita);
     }
 }   
     
