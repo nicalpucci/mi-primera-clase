@@ -73,7 +73,8 @@
         String siestecita;
         if(haceSiestaAhora == true){
             siestecita = "Sí";
-        }else{
+        }
+        else{
             siestecita = "No";
         }
         status = ("Yaya en cuestión: " + nombreYaya + " | Total de tortillas hechas: " + numeroTortillasTotales + " | ¿Está en plena siesta? " + siestecita);
@@ -85,7 +86,8 @@
         String siestecita;
         if(haceSiestaAhora == true){
             siestecita = "Sí";
-        }else{
+        }
+        else{
             siestecita = "No";
         }
         System.out.println("Yaya en cuestión: " + nombreYaya + " | Total de tortillas hechas: " + numeroTortillasTotales + " | ¿Está en plena siesta? " + siestecita);
