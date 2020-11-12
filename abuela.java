@@ -38,7 +38,8 @@
         if(haceSiestaAhora == false){
             numeroTortillasTotales = numeroTortillasTotales + 1;
             resultadoTortilla = numeroTortillasTotales;
-        }else{
+        }
+        else{
             resultadoTortilla = -1;
             System.out.println("ERROR: No puede hacer tortillas si se está echando la siesta");
         }
@@ -55,10 +56,11 @@
     /**
      * La abuela también se echa la siesta, pero también sirve para despertarla
      */    
-    public void DormirODespertar(){
+    public void dormirODespertar(){
         if(haceSiestaAhora == false){
             haceSiestaAhora = true;
-        }else{
+        }
+        else{
             haceSiestaAhora = false;
         }
     }
@@ -74,7 +76,7 @@
         }else{
             siestecita = "No";
         }
-        status = ("Yaya en cuestión: " + nombreYaya + " | " + "Total de tortillas hechas: " + numeroTortillasTotales + " | " + "¿Está en plena siesta? " + siestecita);
+        status = ("Yaya en cuestión: " + nombreYaya + " | Total de tortillas hechas: " + numeroTortillasTotales + " | ¿Está en plena siesta? " + siestecita);
         return status;
     }
     
@@ -86,7 +88,7 @@
         }else{
             siestecita = "No";
         }
-        System.out.println("Yaya en cuestión: " + nombreYaya + " | " + "Total de tortillas hechas: " + numeroTortillasTotales + " | " + "¿Está en plena siesta? " + siestecita);
+        System.out.println("Yaya en cuestión: " + nombreYaya + " | Total de tortillas hechas: " + numeroTortillasTotales + " | ¿Está en plena siesta? " + siestecita);
     }
 }   
     
